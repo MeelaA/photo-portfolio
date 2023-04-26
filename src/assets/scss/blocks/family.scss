@@ -11,14 +11,10 @@
   }
 }
 .tabs {
-	// .tabs__nav
-
 	&__nav {
       max-width: 606px;
 		margin: 25px auto;
 	}
-
-	// .tabs__nav-btn
 
 	&__nav-btn {
 			display: inline-block;
@@ -42,42 +38,21 @@
 			 }
 	   }
 
-		// &__content {
-		// 	max-height: 543px;
-		// }
-
 	&__item {
 	display: none;
-
-
-	&.active {
-
-		display: grid;
-		grid-template-columns: repeat(4, 261px);
-		grid-template-rows: 201px 64px 210px;
-		// grid-template:
-		// [start] "1 2 3 4" 299px 207px 299px 207px [row2]
-		// [row2] "5 6 7 8" 207px 299px 207px 299px [row-end] /261px;
-		grid-gap: 30px;
-		// grid-template-areas:
-		// "1 1 1 1"
-		// "2 2 2 2";
-	}}
-
-	// .tabs__images
-
-	&__images {
+      &.active {
+		   display: grid;
+		   grid-template-columns: repeat(4, auto);
+		   grid-template-rows: 201px 64px 210px;
+		   grid-gap: 30px;
+		}
+	}
+   &__images {
       position: relative;
       overflow: hidden;
+		object-fit: cover;
 
 	}
-	// &__img-btn {
-	// 	position: relative;
-   //    overflow: hidden;
-	// }
-
-
-	// .tabs__images-link
 
 	&__images-link {
 		position: absolute;
