@@ -1,0 +1,136 @@
+.wedding {
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+.wedding-left {
+
+	&__left-content {
+		max-width: 455px;
+		margin-right: 2.8rem;
+	}
+
+	&__bride {
+		position: relative;
+		width: 100%;
+		padding-bottom: 2.8rem;
+		// overflow: hidden;
+		&:hover {
+			.wedding-left__bride-img {
+			transform: scale(1.3);
+			transition-duration: 3s;}
+		}
+
+		&-hidden {
+			overflow: hidden;
+		}
+	}
+
+
+	&__bride-img {
+		position: relative;
+		height: auto;
+		z-index: 2;
+		object-fit: cover;
+		transform: scale(1.05);
+		transition: transform 1s ease-in-out ;
+	}
+
+	// &__img-bg-dots {
+	// 	position: absolute;
+	// 	top: -10%;
+	// 	left: -20%;
+	// }
+
+	// &__description {
+	// }
+}
+
+.wedding-right {
+
+	&__right-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 554px;
+		max-height: 675px;
+	}
+
+	&__video {
+		// flex-basis: 40%;
+		max-width: 552px;
+		max-height: 238px;
+		position: relative;
+		margin-bottom: 15px;
+		overflow: hidden;
+		&:hover {
+			.wedding-right__video-preview {
+			transform: scale(1.3);
+			transition-duration: 3s;}
+		}
+	}
+
+	&__video-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+		transform: translate(-50%, -50%);
+	}
+
+	&__video-preview {
+		overflow: hidden;
+		object-fit: cover;
+		transform: scale(1.05);
+		transition: transform 1s ease-in-out ;
+	}
+
+	// &__video-slideshow {
+	// }
+
+	&__galery-link {
+		position: relative;
+		margin-bottom: 15px;
+
+		width: 240px;
+		height: 35px;
+		font-family: $primary;
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 130%;
+		transition: all .2s ease 0s;
+
+	   &:hover {
+	   	opacity: 1;
+
+	   }
+	   &:hover::before {
+	   	transform: scaleX(1);
+	   	transition: transform 0.3s;
+	   }
+
+	   &::before {
+	   	content: '';
+	   	width: 100%;
+	   	height: 2px;
+	   	background-color: $primary;
+	   	position: absolute;
+	   	left: 0;
+	   	bottom: -1px;
+	   	transform: scaleX(0);
+	   }
+
+		& a {
+			color: inherit;
+		}
+	}
+}
+.wedding-right {
+&__slider {
+	// flex-basis: 40%;
+	overflow: hidden;
+}
+}

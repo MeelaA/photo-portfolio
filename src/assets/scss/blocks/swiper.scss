@@ -1,0 +1,47 @@
+.image-slider {
+	// &__wrapper {
+	// }
+
+	// &__slide {
+	// }
+
+	&__image {
+		max-width: 164px;
+		text-align: center;
+		position: relative;
+	}
+
+	&__image img{
+		 width: 100%;
+	    object-fit: cover;
+		 border-radius: 5px;
+		 padding-bottom: 1rem;
+	}
+
+	&__swiper-loop {
+		max-width: 67px;
+		max-height: 67px;
+		position: absolute;
+	   bottom: 45px;
+	   right: 0;
+	   z-index: 4;
+	   cursor: pointer;
+	}
+}
+// .swiper-container {
+// }
+// .swiper-wrapper {
+// }
+// .swiper-slide {
+// }
+// .text {
+// }
+// .swiper-button-prew {
+// }
+// .swiper-button-next {
+// }
+// .swiper-scrollbar {
+// }
+
+
+

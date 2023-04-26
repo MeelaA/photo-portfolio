@@ -1,0 +1,261 @@
+//All
+// pc
+@media(max-width: 1850px){
+	.sidebar h1 {
+writing-mode: vertical-lr;
+text-orientation: upright;
+text-transform: uppercase;
+font-weight: bold;
+	 }
+}
+
+@media(max-height: 850px){
+	.sidebar h1 {
+font-size: 24px;
+			 }
+}
+
+// pc
+@media(max-width: 1350px){
+	.food__img {
+	   margin-right: -25px;
+   }
+}
+
+
+// pc-min
+@media(max-width: 1160px) {
+	.container {
+		max-width: 970px;
+	}
+	.section {
+		margin-bottom: 120px;
+	}
+	.header {
+		min-height: 100vh;
+		background-image: url(/assets/images/header/bgphotoMb.jpg);
+		background-color: $primary;
+	}
+	.header__social {
+			bottom: 1%;
+	}
+   .food {
+		display: flex;
+		margin-top: 50px;
+
+		&__items {
+			flex-basis: 50%;
+		}
+
+		&__img {
+			flex: 0 0 50%;
+         position: relative;
+			min-height: 250px;
+			margin: 59px 0;
+
+			& img  {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+      }
+   }
+   .items {
+   margin-top: 50px;
+   }
+   .wedding-left {
+		&__left-content {
+			max-width: 300px;
+			margin-right: 1.8rem;
+		}
+	}
+
+	.modal-video {
+		max-width: 800px;
+		padding: 2rem;
+	}
+}
+
+
+// tablet
+@media(max-width: 991.98px) {
+	.container {
+		max-width: 750px;
+	}
+	.section {
+		margin-bottom: 60px;
+	}
+	.food {
+		justify-content: center;
+      flex-wrap: wrap;
+
+      &__items {
+	     flex-basis: auto;
+		  text-align: center;
+      }
+
+	   &__img {
+		  min-width: 470px;
+		  min-height: 350px;
+	   }
+   }
+	.items {
+		margin-top: 50px;
+		padding: 0;
+	}
+	.title {
+		margin: 0 auto;
+	}
+
+	.wedding__content {
+		justify-content: center;
+
+   }
+	.wedding-left__left-content {
+		margin:0 0 2rem 0;
+	}
+	.wedding-right__video {
+		margin-bottom: 4rem;
+	}
+	.wedding-right__galery-link {
+align-self: center;
+margin-bottom: 4rem;
+// &::before a {
+// 	content: '';
+// 	width: 100%;
+// 	height: 2px;
+// 	background-color: $primary;
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: -1px;
+// 	}
+	}
+}
+
+
+// mobile
+@media(max-width: 767.98px) {
+	.container {
+		max-width: none;
+	}
+	.header__top {
+		padding: 0 10px;
+		margin-right: 70px;
+	}
+   .header__button,
+	 nav {
+		display: none;
+	}
+   .header__social-inner-line {
+		width: 18em;
+	}
+   .header__content,
+	.header__social {
+		justify-content: center;
+	}
+	.header__content-inner {
+		text-align: center;
+	}
+
+	.sidebar {
+		width: 25%;
+	 }
+
+	.main-slide {
+		left: 25%;
+		width: 75%;
+	}
+
+	.container-studio .controls button {
+		left: 25%;
+	 }
+
+
+	.wedding-right {
+      &__right-content {
+			align-items: center;
+		}
+
+		&__video {
+			padding: 1rem 2rem;
+		}
+
+   }
+	.wedding-right {
+		&__slider {
+			max-width: 470px;
+			overflow: hidden;
+		}
+		}
+		.modal-video {
+			max-width: 500px;
+			padding: 2rem;
+		}
+	}
+
+
+// min-mobile
+@media(max-width: 479.98px) {
+	.container {
+		max-width: none;
+	}
+	.section {
+		margin-bottom: 40px;
+	}
+   .header__social-inner-line {
+		width: 3em;
+	}
+	.header__social-icon img{
+      padding: 1rem 1rem;
+	}
+   html {
+   	font-size: 7px;
+   }
+
+
+	// .header__title{
+	// 	font-size: 1.2rem;
+	// }
+	// .header h1 {
+	// 	font-size: 3rem;
+	// }
+	// .header__subtitle {
+	// 	font-size: 1.3rem;
+	// }
+	// .header__content-inner{
+	// 	margin-top: 200px;
+	// }
+	.header__social-inner {
+		gap: 15px;
+	}
+   .food {
+		margin-top: 30px;
+	}
+	.title,
+	.text__inner {
+		padding-bottom: 2rem;
+		text-align: center;
+		}
+   .food__img {
+		min-width: 100%;
+	}
+	.wedding-right {
+		&__slider {
+			max-width: 280px;
+			overflow: hidden;
+		}
+	}
+	.wedding-right__galery-link {
+		text-align: center;
+	}
+		.image-slider__swiper-loop {
+			bottom: 35px;
+		}
+		.modal-video {
+			max-width: 320px;
+			padding: 2rem;
+		}
+}
