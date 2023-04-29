@@ -6,24 +6,28 @@
 
   &__text {
 	  margin: 0 auto;
+	//   align-items: center;
 	  text-align: center;
 	  max-width: 740px;
   }
 }
 .tabs {
 	&__nav {
+		display: flex;
+		justify-content: center;
       max-width: 606px;
 		margin: 25px auto;
 	}
 
 	&__nav-btn {
-			display: inline-block;
+		flex: 1, 1, auto;
+			// display: inline-block;
 			font-family: $font_family2;
 			padding: 1em 1.8em;
 			font-weight: 500;
 			font-size: 1.8rem;
 			box-shadow: 0px 6px 23px rgba(31, 39, 67, 0.2);
-			border-radius: 0.3em;
+			// border-radius: 0.3em;
 			transition: all .3s linear;
 
 			 &:hover {
