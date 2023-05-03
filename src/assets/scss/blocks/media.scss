@@ -23,6 +23,18 @@
 	.newpage {
 		margin: 100px auto 100px;
 	}
+   .footer {
+		position: relative;
+	}
+	.footer__info {
+		max-width: 300px;
+		padding: 0 20px;
+	}
+	.footer__arrow-up a {
+		position: absolute;
+		right: 5%;
+		bottom: 10%;
+	}
 }
 
 
@@ -84,6 +96,24 @@
 	.tabs__item.active {
 		grid-template-rows: 155px  46px 165px;
 	}
+
+	.footer__social img{
+		padding: 5px;
+	}
+
+	.footer__info:first-child {
+		max-width: 200px;
+		padding: 0 5px;
+	}
+
+	.footer__text {
+		font-size: 16px;
+	}
+
+	.facebook, .vk, .twitter {
+		max-width: 45px;
+	}
+
 }
 
 
@@ -150,6 +180,26 @@
 		flex-wrap: wrap;
 		gap: 10px;
 	}
+
+	// .footer__text {
+	// 	font-size: 2rem;
+	// }
+
+	.footer__box {
+		width: 90vw;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+	.footer__info {
+		flex-basis: 45%;
+		margin-bottom: 40px;
+	}
+	.footer__info:first-child {
+		max-width: 300px;
+		padding: 0 20px;
+	}
+
 }
 
 
@@ -257,6 +307,23 @@
 		.contacts__feedbacks {
 			align-items: center;
 			padding: 15px;
+		}
+		.footer {
+			padding: 40px 0;
+		}
+		.footer__info {
+			flex-basis: 55%;
+			margin-bottom: 20px;
+			padding: 0;
+		}
+		.footer__info:first-child {
+			padding: 0;
+		}
+		.footer__title {
+			font-size: 20px;
+		}
+		.footer__text {
+			font-size: 16px;
 		}
 	}
 
