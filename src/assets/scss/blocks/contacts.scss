@@ -4,6 +4,9 @@
 	  gap: 70px;
 
 	&__image {
+		max-width: 648px;
+		max-height: 527px;
+		object-fit: cover;
 	}
 
 	&__info {
@@ -47,7 +50,4 @@
 	&__feedbacks-btn {
 
 	}
-
-	// &__cov {
-	// }
 }
