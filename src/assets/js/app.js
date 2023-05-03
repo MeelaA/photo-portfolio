@@ -157,3 +157,22 @@ function onTabClick (item) {
 }
 
 document.querySelector('.tabs__nav-btn').click()
+
+
+
+// ================================= anchors
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+anchors.forEach(anchor => {
+	anchor.addEventListener('click', event => {
+    event.preventDefault();
+
+	 const blockId = anchor.getAttribute('href').substring(1);
+
+	 document.getElementById(blockId).scrollIntoView({
+       behavior: 'smooth',
+		 block: 'start'
+	 })
+	})
+
+})

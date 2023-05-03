@@ -1,0 +1,85 @@
+.footer {
+	padding: 90px 5px;
+	background-color: $brown;
+	color: $white;
+
+	&__box {
+		width: 80vw;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		max-width: 300px;
+	}
+
+	&__info-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+
+	&__logo {
+		padding: 10px 0;
+		transition: all 3s ease-in-out 0s;
+
+      &:hover {
+	       transform: rotateY(-360deg);
+      }
+	}
+
+	&__logo-description {
+		padding: 10px 0;
+		margin-bottom: 10px;
+		font-family: $font_family;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: $white;
+		opacity: 0.8;
+	}
+
+	&__social {
+		padding: 10px 0;
+	}
+	&__social img{
+		padding: 10px;
+		&:hover {
+			transform: translateY(2px);
+		}
+	}
+
+	&__title {
+		padding: 10px 0;
+		margin-bottom: 15px;
+      font-family: $font_family2;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+      color: $white;
+
+	}
+
+	&__text {
+		margin-bottom: 10px;
+		font-family: $font_family;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: $white;
+		opacity: 0.8;
+		cursor: pointer;
+		transition: opacity .2s ease-in;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__arrow-up {
+		&:hover {
+			transform: translateY(2px);
+		}
+	}
+}
