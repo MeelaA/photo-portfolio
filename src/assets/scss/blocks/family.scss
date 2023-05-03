@@ -28,10 +28,11 @@
 			font-size: 1.8rem;
 			box-shadow: 0px 6px 23px rgba(31, 39, 67, 0.2);
 			// border-radius: 0.3em;
-			transition: all .3s linear;
+			transition: background-color .3s linear;
 
 			 &:hover {
-			background-color: $lightred;
+				color: $white;
+			   background-color: $lightred;
 			 }
 			 &.active {
 				color: $white;

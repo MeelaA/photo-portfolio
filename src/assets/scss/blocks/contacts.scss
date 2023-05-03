@@ -1,0 +1,53 @@
+.contacts {
+     display: flex;
+	  align-items: center;
+	  gap: 70px;
+
+	&__image {
+	}
+
+	&__info {
+	}
+
+	&__adress:after {
+		content: '';
+		background-color: $secondary;
+		width: 194px;
+		height: 1px;
+		display: inline-block;
+		opacity: .3;
+		margin-bottom: 5px;
+	}
+
+	&__title {
+	}
+
+	&__tel a{
+		color: $secondary;
+		   &:hover {
+         color: $primary;
+	   }
+	}
+
+	&__mail a{
+		color: $secondary;
+		&:hover {
+         color: $primary;
+	   }
+	}
+
+
+	&__feedbacks {
+		display: flex;
+	}
+
+	&__feedbacks-text {
+	}
+
+	&__feedbacks-btn {
+
+	}
+
+	// &__cov {
+	// }
+}
