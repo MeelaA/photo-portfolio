@@ -6,10 +6,18 @@
 	&__image {
 		max-width: 648px;
 		max-height: 527px;
-		object-fit: cover;
-	}
-
-	&__info {
+		overflow: hidden;
+		&:hover{ img  {
+			transform: scale(1.3);
+			transition-duration: 3s;}
+		}
+		& img  {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transform: scale(1.05);
+			transition: transform 1s ease-in-out ;
+		}
 	}
 
 	&__adress:after {
@@ -20,9 +28,6 @@
 		display: inline-block;
 		opacity: .3;
 		margin-bottom: 5px;
-	}
-
-	&__title {
 	}
 
 	&__tel a{
@@ -42,12 +47,5 @@
 
 	&__feedbacks {
 		display: flex;
-	}
-
-	&__feedbacks-text {
-	}
-
-	&__feedbacks-btn {
-
 	}
 }
