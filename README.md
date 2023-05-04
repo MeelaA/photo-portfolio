@@ -71,7 +71,7 @@ git commit --amend --no-edit
 Обновление в удалённый репозиторий
 
 ```
-git push -f origin develop
+git push -f
 ```
 
 Обновление с удалённого репозитория
